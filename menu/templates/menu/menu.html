@@ -1,0 +1,12 @@
+{% block content %}
+<h1>this is the menu page</h1>
+
+{% for beer in beers %}
+
+<<img src="{{beer.image.url}}" alt="">
+<h2>{{ beer.name }}</h2>
+<h3>{{ beer.description }}</h3>
+
+{% endfor %}
+
+{% endblock %}
